@@ -1,0 +1,6 @@
+{
+  "name": "Smart Attendance Management System",
+  "description": "A comprehensive SaaS Smart Attendance Management System with Admin, Teacher, and Student roles, real-time analytics, critical warnings, and AI-powered recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

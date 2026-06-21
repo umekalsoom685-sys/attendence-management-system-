@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-50: var(--brand-50);
+  --color-brand-100: var(--brand-100);
+  --color-brand-500: var(--brand-500);
+  --color-brand-605: var(--brand-605);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-blue-hover: var(--brand-blue-hover);
+
+  /* Premium Elegant Dark Theme Slate Mapping */
+  --color-slate-950: #060814; /* Deep absolute background */
+  --color-slate-900: #0c101f; /* Elegant card / container surface */
+  --color-slate-850: #171d2e; /* Borders / internal card highlights */
+  --color-slate-800: #222d42; /* Key focus strokes / button surfaces */
+  --color-slate-700: #42506e; /* Subtle text / secondary buttons */
+  --color-slate-650: #607091;
+  --color-slate-600: #7d8ea6; 
+  --color-slate-500: #9daec6; /* Secondary gray/blue text */
+  --color-slate-450: #b9cadc;
+  --color-slate-400: #cbd5e1; /* Medium bright slate text */
+  --color-slate-350: #dae5f2;
+  --color-slate-300: #e2e8f0; /* Rich secondary highlight texts */
+  --color-slate-250: #e9eff6;
+  --color-slate-205: #f1f5f9;
+  --color-slate-200: #f8fafc; /* Near white texts */
+  --color-slate-100: #ffffff; /* Absolute bright whites */
+}
+
+/* Beautiful custom color theme options to make the application perfect and professional */
+:root {
+  --brand-50: rgba(139, 92, 246, 0.1);
+  --brand-100: rgba(139, 92, 246, 0.2);
+  --brand-500: #8b5cf6; /* Sunset Purple */
+  --brand-605: #a78bfa;
+  --brand-blue: #06b6d4;
+  --brand-blue-hover: #22d3ee;
+}
+
+[data-theme="emerald"] {
+  --brand-50: rgba(16, 185, 129, 0.1);
+  --brand-100: rgba(16, 185, 129, 0.2);
+  --brand-500: #10b981; /* Emerald Mint */
+  --brand-605: #34d399;
+  --brand-blue: #0284c7;
+  --brand-blue-hover: #38bdf8;
+}
+
+[data-theme="ocean"] {
+  --brand-50: rgba(59, 130, 246, 0.1);
+  --brand-100: rgba(59, 130, 246, 0.25);
+  --brand-500: #3b82f6; /* Nordic Blue */
+  --brand-605: #60a5fa;
+  --brand-blue: #4f46e5;
+  --brand-blue-hover: #818cf8;
+}
+
+[data-theme="amber"] {
+  --brand-50: rgba(217, 119, 6, 0.1);
+  --brand-100: rgba(217, 119, 6, 0.2);
+  --brand-500: #f59e0b; /* Golden Amber */
+  --brand-605: #fbbf24;
+  --brand-blue: #ea580c;
+  --brand-blue-hover: #f97316;
+}
+
+[data-theme="crimson"] {
+  --brand-50: rgba(225, 29, 72, 0.12);
+  --brand-100: rgba(225, 29, 72, 0.22);
+  --brand-500: #e11d48; /* Imperial Spark / Crimson */
+  --brand-605: #fb7185;
+  --brand-blue: #be185d;
+  --brand-blue-hover: #f472b6;
+}
+
+/* Custom gorgeous UI additions */
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #060814;
+    color: #cbd5e1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbar to match sleek theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060814;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #171d2e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #222d42;
+}
